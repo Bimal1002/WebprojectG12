@@ -1,0 +1,502 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+ .program-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    background-image: url(icon.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 2rem;
+    }
+    
+    .program {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .program h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    }
+    
+    .program p {
+    margin: 0.5rem 0;
+    }
+    
+    /* Media Queries */
+    @media (max-width: 1200px) {
+    .program-list {
+    grid-template-columns: repeat(3, 1fr); 
+    }
+    }
+    
+    @media (max-width: 800px) {
+    .program-list {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    
+    @media (max-width: 500px) {
+    .program-list {
+    grid-template-columns: 1fr;
+    }
+    }
+    
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Search and Filter Section */
+.filters {
+    margin: 20px;
+    text-align: center;
+}
+
+.filters select, .filters input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #005bb5;
+}
+
+.program .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.program .btn:hover {
+    background-color: #005bb5;
+}
+
+/* Admin Login Form */
+.login-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form .btn:hover {
+    background-color: #005bb5;
+}
+
+.login-form .error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+
+/* Admin Login Button */
+.admin-login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+.admin-login-button:hover {
+    background-color: #218838;
+}
+
+/* Admin Dashboard */
+.dashboard {
+    padding: 15px;
+    overflow: auto;
+}
+
+.dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+.dashboard th,
+.dashboard td {
+    padding: 12px 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .dashboard th,
+    .dashboard td {
+        padding: 8px 5px;
+        font-size: 0.9rem;
+    }
+}
+
+.dashboard th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.dashboard tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dashboard tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Navigation */
+.logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.logout-btn:hover {
+    background-color:#0056b3 ;
+    text-decoration: underline;
+}
+
+
+.nav-link {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #28a745;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Management Header */
+.management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: #dc3545;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
+
+.messages {
+    margin: 20px 0;
+}
+
+.error {
+    color: #dc3545;
+    padding: 10px;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.success {
+    color: #28a745;
+    padding: 10px;
+    background-color: #d4edda;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.home {
+    display: inline-block;
+    background-color: green;
+    padding: 5px 8px;
+    color: white;
+
+}
+.home:hover {
+    background-color: skyblue;
+}
+
+footer {
+    background-color:#333;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    }
+    
+    footer p {
+        color: white;
+       margin: 10px ;
+       padding: 1rem;
+    }
+    
+.btn-submit {
+    background-color: #007BFF;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid gold;
+}
+
+.btn-submit:hover{
+    background-color: rgb(221, 221, 233);
+}
+
+
+.program-details{
+    margin-left: 150px;
+    max-width: 70%;
+
+}
+
+
+
+.module-list {
+    list-style: none;
+    padding: 0;
+}
+
+.module-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.module-leader {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.year {
+    background: #e0e0e0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+/* Staff Login Styles */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-login {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Staff Dashboard Styles */
+.staff-login {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.staff-login:hover {
+    background-color: #218838;
+}
+
+.logout {
+    background-color: #059527;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logout:hover {
+    background-color: #218838;
+}
+
+.staff-dashboard {
+    padding: 20px;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.module-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.module-meta {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+@media (max-width: 576px) {
+    .filters {
+        flex-direction: column;
+    }
+    
+    .filters select, 
+    .filters input[type="text"],
+    .filters button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+.active {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.active:hover {
+    background-color: #005bb5;
+    text-decoration: underline;
+}
+
